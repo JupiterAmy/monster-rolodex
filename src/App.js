@@ -22,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Monster Rolodex</h1>
         <SearchBox handleSearch={this.handleSearch}/>
         <CardList monsters={this.state.monsters.filter(monster => monster.name.toLowerCase().includes(this.state.searchText.toLowerCase()))} />
       </div>
